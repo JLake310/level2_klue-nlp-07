@@ -62,6 +62,8 @@
 ## 📃 Task 개요
 문장 속에서 단어 간에 관계성을 파악하는 것은 의미나 의도를 해석함에 있어서 많은 도움을 준다.
 
+![Untitled](https://github.com/JLake310/level2_klue-nlp-07/assets/86578246/935e595c-216d-49e2-87a0-36091bd8be2c)
+
 그림의 예시와 같이 요약된 정보를 사용해 QA 시스템 구축과 활용이 가능하며, 이외에도 요약된 언어 정보를 바탕으로 효율적인 시스템 및 서비스 구성이 가능하다.
 
 **관계 추출(Relation Extraction)** 은 문장의 단어(Entity)에 대한 속성과 관계를 예측하는 문제다. 관계 추출은 지식 그래프 구축을 위한 핵심 구성 요소로, 구조화된 검색, 감정 분석, 질문 답변하기, 요약과 같은 자연어처리 응용 프로그램에서 중요하다. 비구조적인 자연어 문장에서 구조적인 triple을 추출해 정보를 요약하고, 중요한 성분을 핵심적으로 파악할 수 있다.
@@ -246,7 +248,8 @@ Dense layer와 tanh 레이어를 사용하는 기존의 classificationhead에 �
     1. RobertaForSequenceClassification 모델을 RobertaModel과 Classifier로 분리
     2. Classifier를 LSTM layer를 추가한 분류기로 대체 → CustomLSTMClassificationHead
     3. LSTM을 양방향 context를 파악할 수 있는 bi-LSTM으로 바꾸며 분류 실험 진행
-    ![LSTM](https://github.com/boostcampaitech5/level2_klue-nlp-07/assets/86578246/fce5b72e-c80b-4fb4-b2b5-938ed476c0e3)
+    
+![LSTM](https://github.com/boostcampaitech5/level2_klue-nlp-07/assets/86578246/fce5b72e-c80b-4fb4-b2b5-938ed476c0e3)
 
 - 실험 결과
 
